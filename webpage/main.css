@@ -1,14 +1,16 @@
 body {
     background: linear-gradient(110deg, #ddbea9 60%, #b7b7a4 60%);
-    
+
 }
 h1 {
+    text-align: center;
     color: #283618;
     font-family: verdana;
     font-size: 300%;
   }
 
   p {
+    text-align: center;
     color: #a98467;
     font-family: courier;
     font-size: 160%;
@@ -26,12 +28,19 @@ h1 {
     margin: 1px 1px;
     transition-duration: 0.5s;
     cursor: pointer;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%
 }
-  
+
 .button1 {
+
     background-color: #fff1e6;
     color: black;
     border: 2px solid #cb997e;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%
 }
 
 .button1:hover {
