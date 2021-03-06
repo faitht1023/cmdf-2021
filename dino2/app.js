@@ -3,11 +3,12 @@ const dino = document.querySelector('.dino')
 const grid = document.querySelector('.grid')
 const body = document.querySelector('body')
 const alert = document.getElementById('alert')
+const modal = document.getElementById('modal')
 let isJumping = false
 let gravity = 0.9
 let isGameOver = false
 
-//random 
+//This is made
 function control(e) {
   if (e.keyCode === 32) {
     if (!isJumping) {
@@ -45,6 +46,7 @@ function jump() {
   },20)
 }
 
+
 function generateObstacles() {
   // has to do with frequency
   let randomTime = Math.random() * 4000
@@ -58,6 +60,7 @@ function generateObstacles() {
     if (obstaclePosition > 0 && obstaclePosition < 60 && position < 60) {
       clearInterval(timerId)
       alert.innerHTML = 'We all make mistakes! Lets try again!'
+      modal.innerHTML= "will this worK?"
       isGameOver = true
       //remove all children
       body.removeChild(body.firstChild)
