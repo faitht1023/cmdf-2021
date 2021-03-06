@@ -1,17 +1,18 @@
 
 .dino {
   position: absolute;
-  width: 60px;
-  height: 60px;
-  background-image: url(t-rex.png);
+  width: 110px;
+  height: 110px;
+  background-image: url(temp.png);
   bottom: 0px;
+  left: 10px;
 }
 
 .obstacle {
   position: absolute;
-  width: 60px;
-  height: 60px;
-  background-image: url(cacti.png);
+  width: 70px;
+  height: 90px;
+  background-image:url(temp2.png);
   bottom: 0px;
 }
 
@@ -35,7 +36,8 @@
 
 #desert {
   position: absolute;
-  bottom: 0px;
+  bottom: 200px;
+  left: 50;
   background-image: url('t-rex-background.png');
   background-repeat: repeat-x;
   animation: slideright 600s infinite linear;

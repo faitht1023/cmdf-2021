@@ -7,6 +7,7 @@ let isJumping = false
 let gravity = 0.9
 let isGameOver = false
 
+//random 
 function control(e) {
   if (e.keyCode === 32) {
     if (!isJumping) {
