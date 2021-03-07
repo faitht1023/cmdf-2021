@@ -22,8 +22,8 @@
 .obstacle2 {
   position: absolute;
   width: 70px;
-  height: 70px;
-  background-image: url(./images/maryObstacle.png);
+  height: 100px;
+  background-image: url(./images/mjo.png);
   bottom: 0px;
 }
 
