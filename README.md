@@ -31,4 +31,4 @@ How can we educate others and try to combat implicit gender norms and biases wit
 ## How we built it
 Since “Hopping Through History” was inspired by the T-Rex Game, we watched [**tutorials**](https://www.youtube.com/watch?v=dQ6lYd6dyTI&ab_channel=CodewithAniaKub%C3%B3w) to learn the JavaScript, HTML and CSS syntax and better understand the T-Rex Game code implementation. Since we were all beginners, the public [**T-Rex Game code**](https://github.com/kubowania/chrome-trex-game) formed the skeleton of our implementation and we have modified it to better match our vision. We also used Figma to design the different iconic women and their obstacles and make our vision come to life. 
 
-![roya-gameplay](md_assets/roya-gameplay.png)
+![mary-gameplay](md_assets/mary-gameplay.png)
