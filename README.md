@@ -12,7 +12,9 @@ Hopping Through History is a web browser game that raises awareness about women 
 ### Try it out [**here**](https://faitht1023.github.io/)!
 ### Checkout our [**Devpost submission**](https://devpost.com/software/hopping-through-history)!
 
-![hey](md_assets/hey-great-work.png)
+*Grace HOPPer says...*
+
+<img src="https://github.com/faitht1023/cmdf-2021/blob/main/dino2/images/grace-hopper2.png" height="85">  ![hey](md_assets/hey-great-work.png)
 
 ## Inspiration
 Initially inspired by a team member Emily on her daily run, we transformed the simple [**Chrome T-Rex Game**](http://www.trex-game.skipser.com/) into a fun and cute adventure seeking into women’s irreplaceable impact in tech throughout history.
