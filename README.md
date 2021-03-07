@@ -3,7 +3,7 @@
 ### cmd-f 2021 submission
 ![banner](md_assets/banner.png)
 
-***A short journey seeking to educate about female representation in tech through history.***
+***A short and charming journey seeking to educate about female representation in tech throughout history.***
 
 **By: Daniela, Emily, Faith, Jaylan, Jessica, and Vicky**
 
