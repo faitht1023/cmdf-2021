@@ -17,7 +17,7 @@ body {
   position: absolute;
   width: 70px;
   height: 70px;
-  background-image: url(dino2/images/adaLovelaceObstacle.png);
+  background-image: url(./images/obs1.png);
   bottom: 0px;
 }
 
@@ -53,20 +53,48 @@ body {
 
 #modal {
   position: absolute;
-  width: 317px;
-  left: 331px;
-  top: 0px;
+  display: block;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.05);
+  z-index: 1;
+  background-color: #f7cbca;
+  border: 1px solid #222;
+  font-family: "VT323", monospace;
 }
-#modal {
-  position: absolute;
-  width: 317px;
-  left: 331px;
-  top: 230px;
 
-  background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+.old-school-line {
+  height: 1px;
+  background-color: #222;
+  width: 100%;
+  margin-bottom: 1px;
+}
+
+.lines-container {
+  margin-bottom: 20px;
+}
+
+.buttons-container {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  border-radius: 2px;
+  padding: 8px 20px;
+  border: 1px solid #222;
+  margin-right: 15px;
+  text-decoration: none;
+  color: #222;
+}
+
+.primary-button {
+  position: relative;
+  box-shadow: 0 0 0 2px hsl(0, 0%, 30%), 0 0 0 4px hsl(0, 0%, 60%);
 }

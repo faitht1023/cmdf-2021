@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function generateObstacles() {
     // has to do with frequency
-    let randomTime = Math.random() * 4000;
+    let randomTime = Math.random() * 4000 + 100;
     let obstaclePosition = 1000;
     const obstacle = document.createElement("div");
     if (!isGameOver) obstacle.classList.add("obstacle");
@@ -55,11 +55,16 @@ document.addEventListener("DOMContentLoaded", () => {
     obstacle.style.left = obstaclePosition + "px";
 
     let timerId = setInterval(function () {
-      if (obstaclePosition > 0 && obstaclePosition < 60 && position < 60) {
+      if (
+        obstaclePosition > 0 &&
+        obstaclePosition < 60 &&
+        position < 60 &&
+        !isGameOver
+      ) {
         clearInterval(timerId);
         alert.innerHTML = "We all make mistakes! Lets try again!";
-        modal.innerHTML = "will this worK?";
         isGameOver = true;
+        modal.style.display = "block";
         //remove all children
         body.removeChild(body.firstChild);
         while (grid.firstChild) {
@@ -69,7 +74,10 @@ document.addEventListener("DOMContentLoaded", () => {
       obstaclePosition -= 7;
       obstacle.style.left = obstaclePosition + "px";
     }, 20);
-    if (!isGameOver) setTimeout(generateObstacles, randomTime);
+
+    if (!isGameOver) {
+      setTimeout(generateObstacles, randomTime);
+    }
   }
   generateObstacles();
 });
