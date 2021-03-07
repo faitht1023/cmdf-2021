@@ -1,12 +1,14 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const dino = document.querySelector(".dino");
-  const grid = document.querySelector(".grid");
-  const body = document.querySelector("body");
-  const alert = document.getElementById("alert");
-  const modal = document.getElementById("modal");
-  let isJumping = false;
-  let gravity = 0.9;
-  let isGameOver = false;
+document.addEventListener('DOMContentLoaded', () => {
+const dino = document.querySelector('.dino')
+const grid = document.querySelector('.grid')
+const body = document.querySelector('body')
+const alert = document.getElementById('alert')
+const modal = document.getElementById('modal')
+let isJumping = false
+let gravity = 0.9
+let isGameOver = false
+var myScore = 0;
+alert.innerHTML = 'Score: ' + myScore
 
   //This is made
   function control(e) {
@@ -31,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
             clearInterval(downTimerId);
             isJumping = false;
           }
-          position -= 6;
+          position -= 3;
           count--;
           position = position * gravity;
           dino.style.bottom = position + "px";
@@ -47,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function generateObstacles() {
     // has to do with frequency
-    let randomTime = Math.random() * 4000 + 100;
+    let randomTime = Math.floor(Math.random() * (4000 - 1000)) + 1000; //Math.random() * 4000 + 100;
     let obstaclePosition = 1000;
     const obstacle = document.createElement("div");
     if (!isGameOver) obstacle.classList.add("obstacle");
@@ -69,6 +71,10 @@ document.addEventListener("DOMContentLoaded", () => {
         while (grid.firstChild) {
           grid.removeChild(grid.lastChild);
         }
+      }
+      if (obstaclePosition > 0 && obstaclePosition < 60 && position >= 265) {
+        myScore++
+        alert.innerHTML = 'Score: ' + myScore
       }
       obstaclePosition -= 7;
       obstacle.style.left = obstaclePosition + "px";
