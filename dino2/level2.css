@@ -1,0 +1,57 @@
+.mary {
+  position: absolute;
+  width: 110px;
+  height: 150px;
+  background-image: url(./images/mary-jackson2.png);
+  bottom: 0px;
+  left: 10px;
+}
+
+#space {
+  position: absolute;
+  bottom: 200px;
+  left: 50;
+  background-image: url(./images/maryjacksonbackground.png);
+  background-repeat: repeat-x;
+  animation: slideright 7000s infinite linear;
+  -webkit-animation: slideright 7000s infinite linear;
+  width: 100%;
+  height: 400px;
+}
+
+.obstacle2 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-image: url(./images/maryObstacle.png);
+  bottom: 0px;
+}
+
+#background {
+  background-color: #07124d;
+  display: flex;
+  align-items: center;
+}
+
+#modal2 {
+  position: absolute;
+  display: none;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.05);
+  z-index: 1;
+  background-color: #6c7ac2;
+  border: 1px solid #222;
+  font-family: "VT323", monospace;
+}
+
+.mary-image {
+  width: 130px;
+  height: 150px;
+  padding: 20px;
+}

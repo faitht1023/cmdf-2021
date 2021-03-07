@@ -1,14 +1,15 @@
-document.addEventListener('DOMContentLoaded', () => {
-const dino = document.querySelector('.dino')
-const grid = document.querySelector('.grid')
-const body = document.querySelector('body')
-const alert = document.getElementById('alert')
-const modal = document.getElementById('modal')
-let isJumping = false
-let gravity = 0.9
-let isGameOver = false
-var myScore = 0;
-alert.innerHTML = 'Score: ' + myScore
+document.addEventListener("DOMContentLoaded", () => {
+  const dino = document.querySelector(".dino");
+  const mary = document.querySelector(".mary");
+  const grid = document.querySelector(".grid");
+  const body = document.querySelector("body");
+  const alert = document.getElementById("alert");
+  const modal = document.getElementById("modal");
+  let isJumping = false;
+  let gravity = 0.9;
+  let isGameOver = false;
+  var myScore = 0;
+  alert.innerHTML = "Score: " + myScore;
 
   //This is made
   function control(e) {
@@ -36,14 +37,17 @@ alert.innerHTML = 'Score: ' + myScore
           position -= 6;
           count--;
           position = position * gravity;
-          dino.style.bottom = position; //+ "px";
+          console.log(position);
+          if (dino) dino.style.bottom = position + "px";
+          if (mary) mary.style.bottom = position + "px";
         }, 20);
       }
       //move up
       position += 40;
       count++;
       position = position * gravity;
-      dino.style.bottom = position + "px";
+      if (dino) dino.style.bottom = position + "px";
+      if (mary) mary.style.bottom = position + "px";
     }, 20);
   }
 
@@ -52,7 +56,8 @@ alert.innerHTML = 'Score: ' + myScore
     let randomTime = Math.floor(Math.random() * (4000 - 1000)) + 1000; //Math.random() * 4000 + 100;
     let obstaclePosition = 1000;
     const obstacle = document.createElement("div");
-    if (!isGameOver) obstacle.classList.add("obstacle");
+    if (!isGameOver) if (dino) obstacle.classList.add("obstacle");
+    if (mary) obstacle.classList.add("obstacle2");
     grid.appendChild(obstacle);
     obstacle.style.left = obstaclePosition + "px";
 
@@ -72,9 +77,9 @@ alert.innerHTML = 'Score: ' + myScore
           grid.removeChild(grid.lastChild);
         }
       }
-      if (obstaclePosition > 0 && obstaclePosition < 60 && position >= 265) {
-        myScore++
-        alert.innerHTML = 'Score: ' + myScore
+      if (obstaclePosition > 0 && obstaclePosition < 60 && position >= 285) {
+        myScore++;
+        alert.innerHTML = "Score: " + myScore;
       }
       obstaclePosition -= 7;
       obstacle.style.left = obstaclePosition + "px";
