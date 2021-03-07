@@ -17,7 +17,7 @@ body {
   position: absolute;
   width: 70px;
   height: 70px;
-  background-image:url(obs1.png);
+  background-image:url(./images/obs1.png);
   bottom: 0px;
 }
 
