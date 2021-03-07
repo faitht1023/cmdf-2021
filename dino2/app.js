@@ -49,7 +49,7 @@ function jump() {
 
 function generateObstacles() {
   // has to do with frequency
-  let randomTime = Math.random() * 4000
+  let randomTime = Math.random() * 4000 +100
   let obstaclePosition = 1000
   const obstacle = document.createElement('div')
   if (!isGameOver) obstacle.classList.add('obstacle')
