@@ -70,18 +70,19 @@ body {
 
 .modal-quote {
   width: 500px;
-  height: 50px;
+  height: 25px;
+  font-size: 25px;
 }
 
 .modal-body {
   width: 500px;
-  height: 350px;
+  height: 375px;
   display: flex;
   flex-direction: column;
 }
 
 .image-container {
-  height: 50%;
+  height: 40%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -102,11 +103,12 @@ body {
 .text-container {
   height: 50%;
   width: 100%;
+  font-size: 17px;
   text-align: left;
 }
 
 .title {
-  height: 20px;
+  height: 10px;
   width: 100%;
   text-align: left;
   font-weight: bold;
