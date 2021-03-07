@@ -33,10 +33,10 @@ alert.innerHTML = 'Score: ' + myScore
             clearInterval(downTimerId);
             isJumping = false;
           }
-          position -= 3;
+          position -= 6;
           count--;
           position = position * gravity;
-          dino.style.bottom = position + "px";
+          dino.style.bottom = position; //+ "px";
         }, 20);
       }
       //move up
