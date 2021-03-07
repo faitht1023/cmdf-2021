@@ -8,6 +8,7 @@ let isJumping = false
 let gravity = 0.9
 let isGameOver = false
 var myScore = 0;
+alert.innerHTML = 'Score: ' + myScore
 
   //This is made
   function control(e) {

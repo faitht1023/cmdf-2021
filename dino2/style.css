@@ -17,11 +17,7 @@ body {
   position: absolute;
   width: 70px;
   height: 70px;
-<<<<<<< HEAD
-  background-image:url(adaObstacle.png);
-=======
   background-image:url(obs1.png);
->>>>>>> f3bb454b386ca81073b551159124c1d3701ceccc
   bottom: 0px;
 }
 
