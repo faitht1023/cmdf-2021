@@ -8,7 +8,7 @@ body {
   position: absolute;
   width: 110px;
   height: 110px;
-  background-image: url(ada.png);
+  background-image: url(./images/ada.png);
   bottom: 0px;
   left: 10px;
 }
@@ -17,7 +17,7 @@ body {
   position: absolute;
   width: 70px;
   height: 70px;
-  background-image: url(adaLovelaceObstacle.png);
+  background-image: url(./images/adaLovelaceObstacle.png);
   bottom: 0px;
 }
 
@@ -43,7 +43,7 @@ body {
   position: absolute;
   bottom: 200px;
   left: 50;
-  background-image: url(/Users/emilyandrews/cmf-f/cmdf-2021/dino2/public/backgdrop.png);
+  background-image: url(./images/backgdrop.png);
   background-repeat: repeat-x;
   animation: slideright 600s infinite linear;
   -webkit-animation: slideright 600s infinite linear;
