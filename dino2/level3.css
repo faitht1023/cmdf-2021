@@ -13,8 +13,8 @@
   left: 50;
   background-image: url(./images/maryjacksonbackground.png);
   background-repeat: repeat-x;
-  animation: slideright 7000s infinite linear;
-  -webkit-animation: slideright 7000s infinite linear;
+  animation: slideright 600s infinite linear;
+  -webkit-animation: slideright 600s infinite linear;
   width: 100%;
   height: 400px;
 }
@@ -22,8 +22,8 @@
 .obstacle2 {
   position: absolute;
   width: 70px;
-  height: 100px;
-  background-image: url(./images/mjo.png);
+  height: 70px;
+  background-image: url();
   bottom: 0px;
 }
 
