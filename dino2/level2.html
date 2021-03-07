@@ -1,12 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div>Level 2</div>
-  </body>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Hopping Through History</title>
+  <link rel="stylesheet" href="style.css"></link>
+  <link rel="stylesheet" href="level2.css"></link>
+  <script src="app.js" charset="utf-8"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body id="background">
+  <div id="modal">
+    <div class="modal-header">
+      <div class="close-button"></div>
+      <div class="lines-container">
+        <div class="old-school-line"></div>
+        <div class="old-school-line"></div>
+        <div class="old-school-line"></div>
+        <div class="old-school-line"></div>
+        <div class="old-school-line"></div>
+      </div>
+      <div class="modal-quote">
+        Hey, Great work. You'll do better next time.
+      </div>
+      <div class="modal-body">
+        <div class="image-container">
+          <img src="./images/mary-jackson2.png" class="mary-image" />
+          <img src="./images/maryObstacle.png" class="babbage-image" />
+        </div>
+        <div class="text-container">
+          <div class = "title">
+            Mary Jackson
+          </div>
+          Augusta Ada King, Countess of Lovelace (née Byron; 10 December 1815 – 
+          27 November 1852) was an English mathematician and writer, 
+          chiefly known for her work on Charles Babbage's proposed mechanical 
+          general-purpose computer, the Analytical Engine. 
+          She was the first to recognise that the machine had applications beyond 
+          pure calculation, and to have published the first algorithm intended to be 
+          carried out by such a machine. As a result, she is often regarded as one of 
+          the first computer programmers.
+        </div>
+      </div>
+      <div class="buttons-container">
+        <a href="level2.html" class="button secondary-button">Keep Playing</a>
+        <a href="level3.html" class="button primary-button">Next Level</a>
+      </div>
+    </div>
+  </div>
+  <div id="space">
+    <h2 id="alert"></h2>
+    <div class="grid">
+      <div class="mary"></div>
+    </div>
+  </div>
+
+</body>
 </html>

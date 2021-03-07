@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const dino = document.querySelector(".dino");
+  const mary = document.querySelector(".mary");
   const grid = document.querySelector(".grid");
   const body = document.querySelector("body");
   const alert = document.getElementById("alert");
@@ -34,14 +35,17 @@ document.addEventListener("DOMContentLoaded", () => {
           position -= 6;
           count--;
           position = position * gravity;
-          dino.style.bottom = position + "px";
+          console.log(position);
+          if (dino) dino.style.bottom = position + "px";
+          if (mary) mary.style.bottom = position + "px";
         }, 20);
       }
       //move up
       position += 40;
       count++;
       position = position * gravity;
-      dino.style.bottom = position + "px";
+      if (dino) dino.style.bottom = position + "px";
+      if (mary) mary.style.bottom = position + "px";
     }, 20);
   }
 
@@ -50,7 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let randomTime = Math.random() * 4000 + 100;
     let obstaclePosition = 1000;
     const obstacle = document.createElement("div");
-    if (!isGameOver) obstacle.classList.add("obstacle");
+    if (!isGameOver) if (dino) obstacle.classList.add("obstacle");
+    if (mary) obstacle.classList.add("obstacle2");
     grid.appendChild(obstacle);
     obstacle.style.left = obstaclePosition + "px";
 
