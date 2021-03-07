@@ -26,7 +26,8 @@ Initially inspired by a team member Emily on her daily run, we transformed the s
 
 How can we educate others and try to combat implicit gender norms and biases with our beginner skill set yet ambitious spirits?
 
-![ada](md_assets/ada.png)  ![mary](md_assets/mary.png)  ![roya](md_assets/roya.png) 
+<img src="https://github.com/faitht1023/cmdf-2021/blob/main/md_assets/ada.png" height="150"> <img src="https://github.com/faitht1023/cmdf-2021/blob/main/md_assets/mary.png" height="150"> <img src="https://github.com/faitht1023/cmdf-2021/blob/main/md_assets/roya.png" height="150">
+
 ## What it does
 **The Solution:** “Hopping Through History” is a web browser game that raises awareness about women in technology and the struggles they have faced throughout history. We wanted to create an easy yet aesthetically pleasing game that would educate players about the impact of women in technology to reduce gender bias.
 
