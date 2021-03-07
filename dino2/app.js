@@ -1,10 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
   const dino = document.querySelector(".dino");
   const mary = document.querySelector(".mary");
+  const roya = document.querySelector(".roya");
   const grid = document.querySelector(".grid");
   const body = document.querySelector("body");
   const alert = document.getElementById("alert");
   const modal = document.getElementById("modal");
+  const modal3 = document.getElementById("modal3");
+  const modal2 = document.getElementById("modal2");
   let isJumping = false;
   let gravity = 0.9;
   let isGameOver = false;
@@ -34,12 +37,13 @@ document.addEventListener("DOMContentLoaded", () => {
             clearInterval(downTimerId);
             isJumping = false;
           }
-          position -= 3;
+          position -= 6;
           count--;
           position = position * gravity;
           console.log(position);
           if (dino) dino.style.bottom = position + "px";
           if (mary) mary.style.bottom = position + "px";
+          if (roya) roya.style.bottom = position + "px";
         }, 20);
       }
       //move up
@@ -48,6 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
       position = position * gravity;
       if (dino) dino.style.bottom = position + "px";
       if (mary) mary.style.bottom = position + "px";
+      if (roya) roya.style.bottom = position + "px";
     }, 20);
   }
 
@@ -58,6 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const obstacle = document.createElement("div");
     if (!isGameOver) if (dino) obstacle.classList.add("obstacle");
     if (mary) obstacle.classList.add("obstacle2");
+    if (roya) obstacle.classList.add("obstacle3");
     grid.appendChild(obstacle);
     obstacle.style.left = obstaclePosition + "px";
 
@@ -77,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
           grid.removeChild(grid.lastChild);
         }
       }
-      if (obstaclePosition > 0 && obstaclePosition < 60 && position >= 265) {
+      if (obstaclePosition > 0 && obstaclePosition < 60 && position >= 285) {
         myScore++;
         alert.innerHTML = "Score: " + myScore;
       }

@@ -52,3 +52,10 @@ h1 {
     height: 130px;
     padding: 20px;
  }
+ 
+ .centre {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}

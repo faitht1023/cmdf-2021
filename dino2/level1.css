@@ -46,8 +46,8 @@ body {
   background-image: url(./images/backgdrop.png);
   background-repeat: repeat-x;
   /* adjust background scroll speed here: */
-  animation: slideright 8000s infinite linear;
-  -webkit-animation: slideright 8000s infinite linear;
+  animation: slideright 7000s infinite linear;
+  -webkit-animation: slideright 7000s infinite linear;
   width: 100%;
   height: 400px;
 }
