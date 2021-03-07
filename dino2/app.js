@@ -19,7 +19,7 @@ alert.innerHTML = 'Score: ' + myScore
       }
     }
   }
-  document.addEventListener("keyup", control);
+  document.addEventListener("keydown", control);
 
   let position = 0;
   function jump() {
