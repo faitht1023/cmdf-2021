@@ -47,37 +47,42 @@ alert.innerHTML = 'Score: ' + myScore
     }, 20);
   }
 
-function generateObstacles() {
-  // has to do with frequency
-  let randomTime = Math.random() * 4000 +100
-  let obstaclePosition = 1000
-  const obstacle = document.createElement('div')
-  if (!isGameOver) obstacle.classList.add('obstacle')
-  grid.appendChild(obstacle)
-  obstacle.style.left = obstaclePosition + 'px'
+  function generateObstacles() {
+    // has to do with frequency
+    let randomTime = Math.random() * 4000 + 100;
+    let obstaclePosition = 1000;
+    const obstacle = document.createElement("div");
+    if (!isGameOver) obstacle.classList.add("obstacle");
+    grid.appendChild(obstacle);
+    obstacle.style.left = obstaclePosition + "px";
 
-  let timerId = setInterval(function() {
-    if (obstaclePosition > 0 && obstaclePosition < 60 && position < 60) {
-      clearInterval(timerId)
-      alert.innerHTML = 'We all make mistakes! Lets try again! Score: '+myScore
-      modal.innerHTML= "will this worK?"
-      isGameOver = true
-      //remove all children
-      body.removeChild(body.firstChild)
-      while (grid.firstChild) {
-        grid.removeChild(grid.lastChild)
+    let timerId = setInterval(function () {
+      if (
+        obstaclePosition > 0 &&
+        obstaclePosition < 60 &&
+        position < 60 &&
+        !isGameOver
+      ) {
+        clearInterval(timerId);
+        isGameOver = true;
+        modal.style.display = "block";
+        //remove all children
+        body.removeChild(body.firstChild);
+        while (grid.firstChild) {
+          grid.removeChild(grid.lastChild);
+        }
       }
-      
-    }
-    if (obstaclePosition > 0 && obstaclePosition < 60 && position >= 265) {
-      myScore++
-      alert.innerHTML = 'Score: ' + myScore
-    }
-    obstaclePosition -=7
-    obstacle.style.left = obstaclePosition + 'px'
-  },20)
-  if (!isGameOver) setTimeout(generateObstacles, randomTime)
-}
+      if (obstaclePosition > 0 && obstaclePosition < 60 && position >= 265) {
+        myScore++
+        alert.innerHTML = 'Score: ' + myScore
+      }
+      obstaclePosition -= 7;
+      obstacle.style.left = obstaclePosition + "px";
+    }, 20);
 
-generateObstacles()
-})
+    if (!isGameOver) {
+      setTimeout(generateObstacles, randomTime);
+    }
+  }
+  generateObstacles();
+});

@@ -17,7 +17,7 @@ body {
   position: absolute;
   width: 70px;
   height: 70px;
-  background-image:url(obs1.png);
+  background-image: url(./images/obs1.png);
   bottom: 0px;
 }
 
@@ -45,28 +45,106 @@ body {
   left: 50;
   background-image: url(./images/backgdrop.png);
   background-repeat: repeat-x;
-  animation: slideright 600s infinite linear;
-  -webkit-animation: slideright 600s infinite linear;
+  /* adjust background scroll speed here: */
+  animation: slideright 8000s infinite linear;
+  -webkit-animation: slideright 8000s infinite linear;
   width: 100%;
   height: 400px;
 }
 
 #modal {
   position: absolute;
-  width: 317px;
-  left: 331px;
-  top: 0px;
+  display: none;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.05);
+  z-index: 1;
+  background-color: #d8bfac;
+  border: 1px solid #222;
+  font-family: "VT323", monospace;
 }
-#modal {
-  position: absolute;
-  width: 317px;
-  left: 331px;
-  top: 230px;
 
-  background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+.modal-quote {
+  width: 500px;
+  height: 50px;
+}
+
+.modal-body {
+  width: 500px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ada-image {
+  width: 130px;
+  height: 130px;
+  padding: 20px;
+}
+.babbage-image {
+  width: 110px;
+  height: 110px;
+  padding: 20px;
+}
+
+.text-container {
+  height: 50%;
+  width: 100%;
+  text-align: left;
+}
+
+.title {
+  height: 20px;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+}
+
+.old-school-line {
+  height: 1px;
+  background-color: #222;
+  width: 100%;
+  margin-bottom: 1px;
+}
+
+.lines-container {
+  margin-bottom: 20px;
+}
+
+.buttons-container {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  border-radius: 2px;
+  padding: 8px 20px;
+  border: 1px solid #222;
+  margin-right: 15px;
+  text-decoration: none;
+  color: #222;
+}
+
+.primary-button {
+  position: relative;
+  box-shadow: 0 0 0 2px hsl(0, 0%, 30%), 0 0 0 4px hsl(0, 0%, 60%);
+}
+
+.secondary-button {
+  position: relative;
+  box-shadow: 0 0 0 2px hsl(0, 0%, 30%), 0 0 0 4px hsl(0, 0%, 60%);
 }
