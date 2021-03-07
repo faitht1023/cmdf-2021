@@ -11,6 +11,8 @@ Hopp-ing Through History is a web browser game that raises awareness about women
 
 ### Try it out [**here**](https://faitht1023.github.io/)!
 ### Checkout our [**Devpost submission**](https://devpost.com/software/hopping-through-history)!
+### A demo and introduction video:
+[![bRIJcAR6zgwE](https://img.youtube.com/vi/bRIJcAR6zgw/0.jpg)](https://youtu.be/bRIJcAR6zgw)
 
 *Grace HOPPer says...*
 
