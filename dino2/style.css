@@ -73,6 +73,45 @@ body {
   height: 50px;
 }
 
+.modal-body {
+  width: 500px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ada-image {
+  width: 130px;
+  height: 130px;
+  padding: 20px;
+}
+.babbage-image {
+  width: 110px;
+  height: 110px;
+  padding: 20px;
+}
+
+.text-container {
+  height: 50%;
+  width: 100%;
+  text-align: left;
+}
+
+.title {
+  height: 20px;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+}
+
 .old-school-line {
   height: 1px;
   background-color: #222;
