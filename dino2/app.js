@@ -45,14 +45,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 20);
   }
 
-  function generateObstacles() {
-    // has to do with frequency
-    let randomTime = Math.random() * 4000;
-    let obstaclePosition = 1000;
-    const obstacle = document.createElement("div");
-    if (!isGameOver) obstacle.classList.add("obstacle");
-    grid.appendChild(obstacle);
-    obstacle.style.left = obstaclePosition + "px";
+function generateObstacles() {
+  // has to do with frequency
+  let randomTime = Math.random() * 4000 +100
+  let obstaclePosition = 1000
+  const obstacle = document.createElement('div')
+  if (!isGameOver) obstacle.classList.add('obstacle')
+  grid.appendChild(obstacle)
+  obstacle.style.left = obstaclePosition + 'px'
 
     let timerId = setInterval(function () {
       if (obstaclePosition > 0 && obstaclePosition < 60 && position < 60) {
