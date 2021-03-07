@@ -1,4 +1,4 @@
-# Hopping Through History
+# Hopp-ing Through History
 
 ### cmd-f 2021 submission
 ![banner](md_assets/banner.png)
@@ -7,7 +7,7 @@
 
 **By: Daniela, Emily, Faith, Jaylan, Jessica, and Vicky**
 
-Hopping Through History is a web browser game that raises awareness about women in technology and the struggles they have faced throughout history. We wanted to create an easy yet aesthetically pleasing game that would educate players about the impact of women in technology to reduce gender bias.
+Hopp-ing Through History is a web browser game that raises awareness about women in technology and the struggles they have faced throughout history. We wanted to create an easy yet aesthetically pleasing game that would educate players about the impact of women in technology to reduce gender bias.
 
 ### Try it out [**here**](https://faitht1023.github.io/)!
 ### Checkout our [**Devpost submission**](https://devpost.com/software/hopping-through-history)!
@@ -29,9 +29,9 @@ How can we educate others and try to combat implicit gender norms and biases wit
 <img src="https://github.com/faitht1023/cmdf-2021/blob/main/md_assets/ada.png" height="150"> <img src="https://github.com/faitht1023/cmdf-2021/blob/main/md_assets/mary.png" height="150"> <img src="https://github.com/faitht1023/cmdf-2021/blob/main/md_assets/roya.png" height="150">
 
 ## What it does
-**The Solution:** “Hopping Through History” is a web browser game that raises awareness about women in technology and the struggles they have faced throughout history. We wanted to create an easy yet aesthetically pleasing game that would educate players about the impact of women in technology to reduce gender bias.
+**The Solution:** “Hopp-ing Through History” is a web browser game that raises awareness about women in technology and the struggles they have faced throughout history. We wanted to create an easy yet aesthetically pleasing game that would educate players about the impact of women in technology to reduce gender bias.
 
 ## How we built it
-Since “Hopping Through History” was inspired by the T-Rex Game, we watched [**tutorials**](https://www.youtube.com/watch?v=dQ6lYd6dyTI&ab_channel=CodewithAniaKub%C3%B3w) to learn the JavaScript, HTML and CSS syntax and better understand the T-Rex Game code implementation. Since we were all beginners, the public [**T-Rex Game code**](https://github.com/kubowania/chrome-trex-game) formed the skeleton of our implementation and we have modified it to better match our vision. We also used Figma to design the different iconic women and their obstacles and make our vision come to life. 
+Since “Hopp-ing Through History” was inspired by the T-Rex Game, we watched [**tutorials**](https://www.youtube.com/watch?v=dQ6lYd6dyTI&ab_channel=CodewithAniaKub%C3%B3w) to learn the JavaScript, HTML and CSS syntax and better understand the T-Rex Game code implementation. Since we were all beginners, the public [**T-Rex Game code**](https://github.com/kubowania/chrome-trex-game) formed the skeleton of our implementation and we have modified it to better match our vision. We also used Figma to design the different iconic women and their obstacles and make our vision come to life. 
 
 ![mary-gameplay](md_assets/mary-gameplay.png)
