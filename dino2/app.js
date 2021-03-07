@@ -33,7 +33,7 @@ alert.innerHTML = 'Score: ' + myScore
             clearInterval(downTimerId);
             isJumping = false;
           }
-          position -= 6;
+          position -= 3;
           count--;
           position = position * gravity;
           dino.style.bottom = position + "px";
@@ -49,7 +49,7 @@ alert.innerHTML = 'Score: ' + myScore
 
   function generateObstacles() {
     // has to do with frequency
-    let randomTime = Math.random() * 4000 + 100;
+    let randomTime = Math.floor(Math.random() * (4000 - 1000)) + 1000; //Math.random() * 4000 + 100;
     let obstaclePosition = 1000;
     const obstacle = document.createElement("div");
     if (!isGameOver) obstacle.classList.add("obstacle");
