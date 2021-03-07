@@ -30,17 +30,16 @@ document.addEventListener("DOMContentLoaded", () => {
     let count = 0;
     let timerId = setInterval(function () {
       //move down
-      if (count === 15) {
+      if (count === 20) {
         clearInterval(timerId);
         let downTimerId = setInterval(function () {
           if (count === 0) {
             clearInterval(downTimerId);
             isJumping = false;
           }
-          position -= 6;
+          position -= 4;
           count--;
           position = position * gravity;
-          console.log(position);
           if (dino) dino.style.bottom = position + "px";
           if (mary) mary.style.bottom = position + "px";
           if (roya) roya.style.bottom = position + "px";

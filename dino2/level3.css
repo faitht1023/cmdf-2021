@@ -55,3 +55,19 @@
   height: 150px;
   padding: 20px;
 }
+
+.quote2 {
+  height: 20px;
+  width: 480px;
+  text-align: left;
+  display: flex;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.buttons-container2 {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+}
