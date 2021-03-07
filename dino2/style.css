@@ -63,9 +63,14 @@ body {
   background: #ffffff;
   box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.05);
   z-index: 1;
-  background-color: #f7cbca;
+  background-color: #d8bfac;
   border: 1px solid #222;
   font-family: "VT323", monospace;
+}
+
+.modal-quote {
+  width: 500px;
+  height: 50px;
 }
 
 .old-school-line {
@@ -95,6 +100,11 @@ body {
 }
 
 .primary-button {
+  position: relative;
+  box-shadow: 0 0 0 2px hsl(0, 0%, 30%), 0 0 0 4px hsl(0, 0%, 60%);
+}
+
+.secondary-button {
   position: relative;
   box-shadow: 0 0 0 2px hsl(0, 0%, 30%), 0 0 0 4px hsl(0, 0%, 60%);
 }

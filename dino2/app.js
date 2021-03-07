@@ -62,7 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
         !isGameOver
       ) {
         clearInterval(timerId);
-        alert.innerHTML = "We all make mistakes! Lets try again!";
         isGameOver = true;
         modal.style.display = "block";
         //remove all children
