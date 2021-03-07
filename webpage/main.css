@@ -1,18 +1,18 @@
 body {
-    background: linear-gradient(90deg, #ddbea9 60%, #b7b7a4 40%);
+    background: linear-gradient(90deg, #ddbea9 50%, #b7b7a4 50%);
 
 }
 h1 {
     text-align: center;
     color: #283618;
-    font-family: verdana;
+    font-family: "VT323", monospace;
     font-size: 300%;
   }
 
   p {
     text-align: center;
     color: #a98467;
-    font-family: verdana;
+    font-family: "VT323", monospace;
     font-size: 160%;
   }
 
@@ -23,7 +23,7 @@ h1 {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-family: Verdana, sans-serif;
+    font-family: "VT323", monospace;
     font-size: 20px;
     margin: 1px 1px;
     transition-duration: 0.5s;
@@ -34,7 +34,6 @@ h1 {
 }
 
 .button1 {
-
     background-color: #fff1e6;
     color: black;
     border: 2px solid #cb997e;
@@ -47,3 +46,9 @@ h1 {
     background-color: #cb997e;
     color: white;
   }
+
+.ada-image {
+    width: 130px;
+    height: 130px;
+    padding: 20px;
+ }
